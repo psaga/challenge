@@ -1,0 +1,91 @@
+{
+    "timeline": [
+        {
+            "month": "September",
+            "year": "2023",
+            "events": [
+                {
+                    "type": "Email Sent",
+                    "dateTime": "Sep 23, 2023 - 1:45PM",
+                    "source": "Gerardo Moyano",
+                    "body": "Upselling email sent.",
+                    "mailUrl": "http://example.com"
+                },
+                {
+                    "type": "Chat Meeting",
+                    "dateTime": "Sep 2, 2023 - 1:45PM",
+                    "source": "Prof. Jean Charleton",
+                    "body": "Whatsapp chat meeting."
+                }
+            ]
+        },
+        {
+            "month": "August",
+            "year": "2023",
+            "events": [
+                {
+                    "type": "LMS Assigment Delivered",
+                    "dateTime": "Aug 5, 2023 - 5:33PM",
+                    "source": "Danielle Munchen Schollengberg",
+                    "body": "For: \"Career Planning and Development\"\nAssignment Name: \"Quiz01\", Delivered ON TIME.\nGrade: TBD"
+                },
+                {
+                    "type": "Call",
+                    "dateTime": "Aug 4, 2023 - 1:45PM",
+                    "source": "Gerardo Moyano",
+                    "body": "Direct Call made to +525522126164\nCall Duration: 0 mins. 10 sec."
+                },
+                {
+                    "type": "Tag Added",
+                    "dateTime": "Aug 3, 2023 - 5:33PM",
+                    "source": "Career Planning and Development, by Prof. Jean Charleton",
+                    "body": "Multiple Problems, Injuried, Check, Late"
+                },
+                {
+                    "type": "Tag Added",
+                    "dateTime": "Aug 2, 2023 - 1:45PM",
+                    "source": "Gerardo Moyano",
+                    "body": "Inactive, Control, Schollarship"
+                },
+                {
+                    "type": "Email Sent",
+                    "dateTime": "Aug 2, 2023 - 1:45PM",
+                    "source": "Prof. Jean Charleton",
+                    "body": "Check email sent.",
+                    "mailUrl": "http://example.com"
+                }
+            ]
+        },
+        {
+            "month": "July",
+            "year": "2023",
+            "events": [
+                {
+                    "type": "Call",
+                    "dateTime": "Jul 12, 2023 - 1:45PM",
+                    "source": "Gerardo Moyano",
+                    "body": "Direct Call made to +54 55 22126164\nCall Duration: 1 mins. 22 sec."
+                },
+                {
+                    "type": "Call",
+                    "dateTime": "Jul 12, 2023 - 1:45PM",
+                    "source": "Gerardo Moyano",
+                    "body": "Direct Call made to +54 55 22126164\nCall Duration: 2 mins. 30 sec."
+                }
+            ]
+        },
+        {
+            "month": "June",
+            "year": "2023",
+            "events": [
+                {
+                    "type": "Initial Contact",
+                    "dateTime": "Jun 11, 2023 - 1:45PM",
+                    "source": "Gerardo Moyano",
+                    "body": "Welcome email sent.",
+                    "emailUrl": "http://example.com"
+                }
+            ]
+        }
+    ]
+}

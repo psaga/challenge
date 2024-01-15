@@ -1,0 +1,23 @@
+.details {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  
+    .email-container {
+      border-bottom: 1px solid #dddddd;
+  
+      .label {
+        display: flex;
+        justify-content: space-between;
+      }
+  
+      .email {
+        padding: 5px 0px;
+      }
+  
+      svg {
+        fill: #6e6b7b;
+      }
+    }
+  }

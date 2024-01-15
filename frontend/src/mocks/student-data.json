@@ -1,0 +1,31 @@
+{
+    "firstName": "Danielle",
+    "lastName": "Munchen Schollengberg",
+    "id": "AYSI32392",
+    "avatarUrl": "/src/mocks/avatar00012.png",
+    "statusGeneral": "Active",
+    "periodo": "2023 - 1",
+    "status": "Alumno Regular",
+    "colegio": "Aldebaran",
+    "modAdmision": "Centro Pre",
+    "riesgos": [
+        {"course": "Matemática"},
+        {"course": "Química"},
+        {"course": "Programación"},
+        {"course": "Comunicación"}
+    ],
+    "email": "danielle_munchen@gmail.com",
+    "phone": "+52 5522126164",
+    "country": "México",
+    "category": "Do Not Contact",
+    "career": {
+        "name": "Software Engineering",
+        "id": "0398P",
+        "type": "Graduate",
+        "modality": "On-Campus",
+        "status": "Enrollment",
+        "cohort": "A1 2023"
+    }
+
+}
+

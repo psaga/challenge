@@ -1,0 +1,35 @@
+.card {
+  width: 360px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color-components);
+  padding: 15px;
+  box-shadow: 0px 0px 15px 0px #0000000d;
+  border-radius: 6px;
+  color: var(--text-color);
+  gap: 10px;
+  font-weight: 700;
+
+  &.gap-xl {
+    gap: 15px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+
+    .draggable {
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      text-align: center;
+    }
+    svg {
+      fill: var(--text-color);
+    }
+  }
+  .slot {
+    font-size: 12px;
+  }
+}

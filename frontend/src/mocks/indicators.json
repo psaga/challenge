@@ -1,0 +1,40 @@
+{
+  "indicators": [
+    {
+      "name": "Record Age",
+      "status": "12 days",
+      "label": "Created on",
+      "value": "Jan 2, 2023",
+      "icon": "IconToday"
+    },
+    {
+      "name": "Status",
+      "nameIcon": "IconSettings",
+      "status": "Active",
+      "label": "Updated",
+      "value": "Nov 2, 2023",
+      "icon": "IconCheckCircle"
+    },
+    {
+      "name": "Country",
+      "status": "México",
+      "label": "State",
+      "value": "Cordoba",
+      "icon": "IconLocation"
+    },
+    {
+      "name": "Last Contact",
+      "status": "2 days ago",
+      "label": "Nov 29, 2023",
+      "value": "2:43 pm",
+      "icon": "IconContactPage"
+    },
+    {
+      "name": "Last Activity",
+      "status": "7 days ago",
+      "label": "Nov 29, 2023",
+      "value": "2:43 pm",
+      "icon": "IconTimeline"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+.main-menu {
+    position: fixed;
+    top: var(--navbar-height);
+    height: calc(100% - var(--navbar-height));
+    padding: 10px;
+    width: var(--min-menu-width);
+    box-sizing: border-box;
+    background-color: #ffffff;
+    box-shadow: 4px 0px 15px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    z-index: 10;
+    font-weight: 700;
+
+    .button {
+        height: 42px;
+        font-size: 15px;
+        padding: 0px 10px;
+        border-radius: 5px;
+        color: var(--text-color);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.05);
+        cursor: pointer;
+
+        
+        .item-name {
+            flex-grow: 1;
+            display: none;
+        }
+        
+        svg {
+            fill: var(--text-color);
+            width: 24px;
+            height: 21px;
+        }
+        .chevron-container {
+            display: none;
+            text-align: center;
+            flex-shrink: 0;
+            width: 24px;
+            height: 21px;
+            &.rotate {
+                transform: rotate(180deg);
+            }
+            svg {
+                width: 13px;
+                height: 8px;
+            }
+        }
+
+        &.active {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            svg {
+                fill: #ffffff;
+            }
+        }
+    }
+    .report-section {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+
+        .section-container {
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+        }
+        .title {
+            font-size: 12px;
+            color: #BABFC7;
+            width: 100%;
+            .expanded {
+                display: none;
+            }
+            .collapsed {
+                width: 100%;
+                text-align: center;
+                display: inline-block;
+                svg {
+                    fill: var(--text-color);
+                }
+            }
+        }
+        .subitems-container {
+            display: none;
+            gap: 10px;
+            flex-direction: column;
+
+            .subitem-name {
+                height: 24px;
+                padding: 0px 10px 0px 30px;
+                font-weight: 500;
+                font-size: 15px;
+                color: var(--text-color);
+            }
+        }
+        .button {
+            &.hover {
+                box-shadow: 0px 0px 15px 0px #0000000D;
+            }
+        }
+    }
+
+
+    &:hover {
+        width: var(--max-menu-width);
+        .button {
+            .item-name {
+                display: block;
+            }
+            .chevron-container {
+                display: block;
+            }
+        }
+        .report-section {
+            .title {
+                .expanded {
+                    display: block
+                }
+                .collapsed {
+                    display: none;
+                }
+            }
+            .subitems-container{
+                display: flex;
+            }
+        }
+    }
+}
+
+

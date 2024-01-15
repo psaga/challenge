@@ -1,0 +1,33 @@
+.student-card {
+    .details {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 20px;
+    }
+
+    .risk-details {
+        .title {
+            font-size: 14px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #dddddd;
+        }
+        .risks-container {
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            padding: 10px 0px;
+            .risk {
+                display: flex;
+                .course {
+                    width: 100px;
+                }
+                .info {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}

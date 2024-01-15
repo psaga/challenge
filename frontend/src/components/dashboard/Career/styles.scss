@@ -1,0 +1,11 @@
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  
+    .career-name-container {
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+    }
+  }

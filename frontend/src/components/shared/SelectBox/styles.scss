@@ -1,0 +1,36 @@
+.select-container {
+    position: relative;
+    display: inline-block;
+
+    select {
+        height: 38px;
+        cursor: pointer;
+        width: 100%;
+        padding: 7px 15px 7px 15px;
+        border: 1px solid #D8D6DE;
+        border-radius: 5px;
+        background-color: #ffffff;
+        font-size: 12px;
+        font-family: 'Monserrat', sans-serif;
+        font-weight: 700;
+        color: var(--text-color);
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none; 
+    }
+    .icon {
+       position: absolute;
+       right: 10px;
+       top: 50%;
+       transform: translateY(-50%);
+       pointer-events: none;
+       width: 16px;
+       height: 24px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       svg {
+        fill: var(--text-color);
+       }
+    }
+}
