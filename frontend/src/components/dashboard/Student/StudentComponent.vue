@@ -7,17 +7,11 @@
       <div>Mod. Adminisión: {{ studentData.modAdmision }}</div>
       <div>
         Segmento:
-        {{
-          "segmento" in studentData ? studentData.segmento : "Sin Información"
-        }}
+        {{ studentData.segmento }}
       </div>
       <div>
         Segmento Detalle:
-        {{
-          "segmentoDetalle" in studentData
-            ? studentData.segmentoDetalle
-            : "Sin Información"
-        }}
+        {{ studentData.segmentoDetalle }}
       </div>
     </div>
     <div class="risk-details">
@@ -31,11 +25,9 @@
           <div class="course">{{ item.course }}:</div>
           <div class="info">
             <span>
-              {{ "risk" in item ? item.risk : "Riesgo Sin Definir" }}
+              {{ item.risk }}
             </span>
-            <span>
-              (Nota: {{ "note" in item ? item.note : "Sin  Información" }})
-            </span>
+            <span> (Nota: {{ item.note }}) </span>
           </div>
         </div>
       </div>
