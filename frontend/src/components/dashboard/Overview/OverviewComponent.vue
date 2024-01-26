@@ -14,8 +14,10 @@
       </div>
     </div>
     <Timeline class="tab-content" v-show="activeTab === 'Activity'" />
-    <div class="tab-content" v-show="activeTab === 'Emails'"></div>
-    <div class="tab-content" v-show="activeTab === 'Calls'"></div>
+    <div class="tab-content" v-show="activeTab === 'Emails'">
+      Emails Section
+    </div>
+    <div class="tab-content" v-show="activeTab === 'Calls'">Calls Section</div>
   </div>
 </template>
 <script type="ts" src="./index.ts" />

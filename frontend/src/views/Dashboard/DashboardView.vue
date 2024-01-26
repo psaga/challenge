@@ -18,8 +18,8 @@
     <div class="right-panel">
       <HeaderSection @tab-selected="onTabSelected" :activeTab="activeTab" />
       <Overview v-show="activeTab === 'Overview'" />
-      <div v-show="activeTab === 'Enrollment'"></div>
-      <div v-show="activeTab === 'Academic'"></div>
+      <div v-show="activeTab === 'Enrollment'">Enrollment Section</div>
+      <div v-show="activeTab === 'Academic'">Academic Section</div>
     </div>
   </div>
 </template>
