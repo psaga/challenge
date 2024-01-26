@@ -12,6 +12,7 @@
         :class="{ active: activeTab === tab }"
         :key="index"
         v-for="(tab, index) in tabs"
+        @click="selectTab(tab)"
         >{{ tab }}</span
       >
     </div>

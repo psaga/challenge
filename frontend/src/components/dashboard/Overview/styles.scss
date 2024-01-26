@@ -17,6 +17,7 @@
             font-weight: 700;
             color: var(--text-color);
             opacity: 0.4;
+            cursor: pointer;
             &.active {
                 opacity: 1;
             }

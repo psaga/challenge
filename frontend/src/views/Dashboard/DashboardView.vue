@@ -8,8 +8,10 @@
       <Widgets />
     </div>
     <div class="right-panel">
-      <HeaderSection @tab-selected="onTabSelected" />
+      <HeaderSection @tab-selected="onTabSelected" :activeTab="activeTab" />
       <Overview v-show="activeTab === 'Overview'" />
+      <div v-show="activeTab === 'Enrollment'"></div>
+      <div v-show="activeTab === 'Academic'"></div>
     </div>
   </div>
 </template>

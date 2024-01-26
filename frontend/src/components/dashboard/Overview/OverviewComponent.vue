@@ -7,12 +7,15 @@
         :class="{ active: tab.name === activeTab }"
         v-for="(tab, index) in tabs"
         :key="index"
+        @click="activeTab = tab.name"
       >
         <span v-if="tab.icon"><component :is="tab.icon"></component></span
         >{{ tab.name }}
       </div>
     </div>
-    <Timeline v-show="activeTab === 'Activity'" />
+    <Timeline class="tab-content" v-show="activeTab === 'Activity'" />
+    <div class="tab-content" v-show="activeTab === 'Emails'"></div>
+    <div class="tab-content" v-show="activeTab === 'Calls'"></div>
   </div>
 </template>
 <script type="ts" src="./index.ts" />
