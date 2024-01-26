@@ -8,7 +8,10 @@
         }}</span>
         <span class="reg"
           >Reg. ID: {{ studentData.id }}
-          <span v-clipboard:copy="studentData.id" v-clipboard:success="onCopy"
+          <span
+            class="copy-container"
+            v-clipboard:copy="studentData.id"
+            v-clipboard:success="onCopy"
             ><IconContentCopy
           /></span>
         </span>
