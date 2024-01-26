@@ -8,9 +8,9 @@
         handle=".draggable"
       >
         <component
-          v-for="(section, index) in draggableList"
-          :is="section"
-          :key="index"
+          v-for="section in draggableList"
+          :is="section.component"
+          :key="section.id"
         />
       </draggable>
       <Widgets />

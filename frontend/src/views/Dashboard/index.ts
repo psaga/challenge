@@ -22,7 +22,20 @@ export default Vue.extend({
   data() {
     return {
       activeTab: "Overview",
-      draggableList: [Student, About, Career],
+      draggableList: [
+        {
+          id: "student",
+          component: Student,
+        },
+        {
+          id: "about",
+          component: About,
+        },
+        {
+          id: "career",
+          component: Career,
+        },
+      ],
     };
   },
   methods: {
