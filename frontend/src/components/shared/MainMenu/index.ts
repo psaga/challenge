@@ -29,7 +29,7 @@ export default Vue.extend({
   },
   data() {
     return {
-      openedComponentIndex: 3,
+      openedComponentIndex: undefined as number | undefined,
       reportItems: [
         {
           name: "Smart Enroller",
@@ -83,6 +83,13 @@ export default Vue.extend({
       const currentRoute = (this as any).$route.name;
       const routeFromName = name.toLowerCase().replace(/\s+/g, "-");
       return currentRoute === routeFromName;
+    },
+    toogleItem(index: number) {
+      if (this.openedComponentIndex === index) {
+        this.openedComponentIndex = undefined;
+      } else {
+        this.openedComponentIndex = index;
+      }
     },
   },
 });

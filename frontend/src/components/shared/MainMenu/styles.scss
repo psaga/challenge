@@ -4,6 +4,7 @@
     height: calc(100% - var(--navbar-height));
     padding: 10px;
     width: var(--min-menu-width);
+    transition: width 200ms ease;
     box-sizing: border-box;
     background-color: #ffffff;
     box-shadow: 4px 0px 15px 0px rgba(0, 0, 0, 0.15);
@@ -25,10 +26,12 @@
         box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.05);
         cursor: pointer;
 
-        
         .item-name {
             flex-grow: 1;
-            display: none;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 200ms, visibility 200ms;
+            white-space: nowrap; 
         }
         
         svg {
@@ -96,6 +99,7 @@
                 font-weight: 500;
                 font-size: 15px;
                 color: var(--text-color);
+                cursor: pointer;
             }
         }
         .button {
@@ -111,6 +115,8 @@
         .button {
             .item-name {
                 display: block;
+                opacity: 1;
+                visibility: visible;
             }
             .chevron-container {
                 display: block;
