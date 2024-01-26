@@ -5,6 +5,7 @@ import Career from "@/components/dashboard/Career/CareerComponent.vue";
 import Widgets from "@/components/dashboard/Widgets/WidgetsComponent.vue";
 import HeaderSection from "@/components/dashboard/HeaderSection/HeaderSectionComponent.vue";
 import Overview from "@/components/dashboard/Overview/OverviewComponent.vue";
+import draggable from "vuedraggable";
 import Vue from "vue";
 
 export default Vue.extend({
@@ -16,10 +17,12 @@ export default Vue.extend({
     Widgets,
     HeaderSection,
     Overview,
+    draggable,
   },
   data() {
     return {
       activeTab: "Overview",
+      draggableList: [Student, About, Career],
     };
   },
   methods: {

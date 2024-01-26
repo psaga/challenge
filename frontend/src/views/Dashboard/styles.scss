@@ -11,6 +11,12 @@
       flex-direction: column;
       gap: 10px;
       position: relative;
+
+      .draggable-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
     }
     .right-panel {
       flex-grow: 1;

@@ -1,5 +1,5 @@
 <template>
-  <Card class="student-card" title="Sobre el estudiante">
+  <Card class="student-card" title="Sobre el estudiante" closable>
     <div class="details">
       <div>Período: {{ studentData.periodo }}</div>
       <div>Status: {{ studentData.status }}</div>

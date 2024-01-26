@@ -2,9 +2,17 @@
   <div class="panels-container">
     <div class="left-panel">
       <Operations />
-      <Student />
-      <About />
-      <Career />
+      <draggable
+        v-model="draggableList"
+        class="draggable-list"
+        handle=".draggable"
+      >
+        <component
+          v-for="(section, index) in draggableList"
+          :is="section"
+          :key="index"
+        />
+      </draggable>
       <Widgets />
     </div>
     <div class="right-panel">

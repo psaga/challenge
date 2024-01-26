@@ -11,10 +11,11 @@ export default Vue.extend({
   },
   props: {
     title: String,
+    closable: Boolean,
   },
   data() {
     return {
-      opened: true,
+      opened: this.closable ? true : undefined,
     };
   },
 });
