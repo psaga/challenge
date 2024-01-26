@@ -11,6 +11,9 @@
   --text-color: #6E6B7B;
   --link-color: #7367F0;
   font-family: 'Monserrat', sans-serif;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 html, body {
@@ -24,7 +27,9 @@ html, body {
   height: var(--footer-height);
   box-sizing: border-box;
   padding: 15px 21px;
-  position: absolute;
+  position: fixed;
+  width: 100%;
+  background-color: #eeeeee;
   bottom: 0;
   display: flex;
   align-items: center;

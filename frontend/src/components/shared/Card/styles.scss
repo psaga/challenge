@@ -24,12 +24,21 @@
       height: 16px;
       display: inline-block;
       text-align: center;
+      cursor: grab;
     }
     svg {
       fill: var(--text-color);
     }
+    .collapsable {
+      cursor: pointer;
+    }
   }
   .slot {
     font-size: 12px;
+    transition: display 200ms;
+    display: block;
+    &.collapsed {
+      display: none;
+    }
   }
 }

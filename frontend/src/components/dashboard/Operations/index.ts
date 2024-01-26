@@ -25,4 +25,9 @@ export default Vue.extend({
       studentData,
     };
   },
+  methods: {
+    onCopy(event: any) {
+      console.log(event.text);
+    },
+  },
 });

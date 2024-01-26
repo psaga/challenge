@@ -7,7 +7,13 @@
           studentData.firstName + " " + studentData.lastName
         }}</span>
         <span class="reg"
-          >Reg. ID: {{ studentData.id }} <IconContentCopy />
+          >Reg. ID: {{ studentData.id }}
+          <span
+            class="copy-container"
+            v-clipboard:copy="studentData.id"
+            v-clipboard:success="onCopy"
+            ><IconContentCopy
+          /></span>
         </span>
         <span class="status">Status: {{ studentData.statusGeneral }}</span>
       </span>

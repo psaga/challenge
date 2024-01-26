@@ -1,5 +1,5 @@
 <template>
-  <Card class="about-card" title="About">
+  <Card class="about-card" title="About" closable>
     <div class="details">
       <div>
         <div>First Name:</div>
@@ -11,9 +11,24 @@
       </div>
       <div class="email-container">
         <div class="label">
-          <span>Email: </span> <span><IconEdit /></span>
+          <span>Email: </span>
+          <span
+            v-show="!editEmailMode"
+            class="edit-email"
+            @click="activeEmailMode"
+            ><IconEdit
+          /></span>
+          <span v-show="editEmailMode" class="edit-email" @click="editEmail"
+            ><IconDone
+          /></span>
         </div>
-        <div class="email">{{ studentData.email }}</div>
+        <div v-show="!editEmailMode" class="email">{{ studentData.email }}</div>
+        <input
+          ref="editEmailInput"
+          v-show="editEmailMode"
+          :value="studentData.email"
+          v-on:blur="handleBlur"
+        />
       </div>
       <div>
         <div>Country:</div>

@@ -6,16 +6,17 @@ export default Vue.extend({
   components: {
     IconAppRegistration,
   },
+  props: {
+    activeTab: String,
+  },
   data() {
     return {
       studentData,
       tabs: ["Overview", "Enrollment", "Academic"],
-      activeTab: "Overview",
     };
   },
   methods: {
     selectTab(tab: string) {
-      this.activeTab = tab;
       this.$emit("tab-selected", tab);
     },
   },

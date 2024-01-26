@@ -1,7 +1,9 @@
 <template>
   <div class="main-menu">
     <div class="button" :class="{ active: isActive('Dashboard') }">
-      <IconHome />
+      <span class="icon">
+        <IconHome />
+      </span>
       <span class="item-name">Dashboard</span>
     </div>
     <div class="report-section">
@@ -14,15 +16,21 @@
         :key="index"
         class="section-container"
       >
-        <div class="button" :class="{ active: isActive(item.name) }">
-          <component :is="item.component"></component>
+        <div
+          class="button"
+          :class="{ active: isActive(item.name) }"
+          @click="toogleItem(index)"
+        >
+          <span class="icon">
+            <component :is="item.component"></component>
+          </span>
           <span class="item-name">{{ item.name }}</span>
           <span class="chevron-container" v-if="item.subItems">
-            <IconExpandMore v-show="index != openedComponentIndex" />
-            <IconExpandLess v-show="index == openedComponentIndex" />
+            <IconExpandMore v-show="index !== openedComponentIndex" />
+            <IconExpandLess v-show="index === openedComponentIndex" />
           </span>
         </div>
-        <div v-if="item.subItems" class="subitems-container">
+        <div v-show="openedComponentIndex === index" class="subitems-container">
           <li
             class="subitem-name"
             :key="indexSubItem"

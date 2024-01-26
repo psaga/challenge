@@ -1,5 +1,5 @@
 <template>
-  <Card class="career-card" title="Career Details">
+  <Card class="career-card" title="Career Details" closable>
     <div class="details">
       <div class="career-name-container">
         <div>Career Name:</div>

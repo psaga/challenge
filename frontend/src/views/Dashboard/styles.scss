@@ -5,12 +5,18 @@
     gap: 20px;
     .left-panel {
       width: auto;
-      overflow-y: scroll;
+      overflow-y: auto;
       padding-right: 5px;
       display: flex;
       flex-direction: column;
       gap: 10px;
       position: relative;
+
+      .draggable-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
     }
     .right-panel {
       flex-grow: 1;

@@ -1,16 +1,16 @@
 <template>
   <div class="card" :class="{ 'gap-xl': title }">
-    <div class="header" v-if="title">
-      <div>
+    <div class="header" v-if="title || closable">
+      <div v-if="title">
         <span class="draggable"><IconDragIndicator /></span>
         <span class="title">{{ title }}</span>
       </div>
-      <span class="collapsable">
+      <span v-if="closable" class="collapsable" @click="opened = !opened">
         <IconExpandMore v-show="!opened" />
         <IconExpandLess v-show="opened" />
       </span>
     </div>
-    <div class="slot">
+    <div class="slot" :class="{ 'collapsed': closable && !opened }">
       <slot></slot>
     </div>
   </div>
